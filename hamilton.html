@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="style4.css">
+</head>
+<body>
+    <h1 id="up">Lewis Hamilton</h1>
+    <div class="topnav">
+        <a href="#gallery-container">Galeria</a>
+        <a href="#stats">Informacje</a>
+        <a href="#carrer">Kariera</a>
+        <a href="#informs">O życiu</a>
+      </div>
+        <br>
+    <div id="gallery-container">
+    <div class="row">
+        <div class="column">
+          <img src="foto/ham1.jpg" alt=obraz onclick="openModal();currentSlide(1)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="foto/ham2.jpg" alt=obraz onclick="openModal();currentSlide(2)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="foto/ham3.jpg" alt=obraz onclick="openModal();currentSlide(3)" class="hover-shadow">
+        </div>
+      </div>
+      
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+      
+          <div class="mySlides">
+            <div class="numbertext">1 / 3</div>
+            <img src="foto/ham1.jpg" style="width:100%" alt=obraz>
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">2 / 3</div>
+            <img src="foto/ham2.jpg" style="width:100%" alt=obraz>
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">3 / 3</div>
+            <img src="foto/ham3.jpg" style="width:100%" alt=obraz>
+          </div>
+    
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+      
+          <div class="column">
+            <img class="demo" src="foto/ham1.jpg" onclick="currentSlide(1)" alt="Hamilton z Maxem Verstappenem po przegraniu mistrzostw Abu Dhabi 2021">
+          </div>
+      
+          <div class="column">
+            <img class="demo" src="foto/ham2.jpg" onclick="currentSlide(2)" alt="Hamilton po zwycięstwie w GP Turcji 2020">
+          </div>
+      
+          <div class="column">
+            <img class="demo" src="foto/ham3.jpg" onclick="currentSlide(3)" alt="Hamilton po wygraniu mistrzostwa w Abu Dhabi 2020">
+          </div>
+        </div>
+    </div>
+</div>
+<br>
+<table>
+  <caption id="stats">Informacje</caption>
+    <tr>
+        <td>Data Urodzenia</td>
+        <td>7.01.1985</td>
+    </tr>
+    <tr>
+        <td>Narodowość</td>
+        <td>Wielka Brytania</td>
+    </tr>
+    <tr>
+        <td>Lata kariery</td>
+        <td>2007-obecnie</td>
+    </tr>
+    <tr>
+        <td>Starty</td>
+        <td>293</td>
+    </tr>
+    <tr>
+        <td>Podia</td>
+        <td>183</td>
+    </tr>
+    <tr>
+        <td>Pole positions</td>
+        <td>103</td>
+    </tr>
+    <tr>
+        <td>Zwycięstwa</td>
+        <td>103</td>
+    </tr>
+    <tr>
+        <td>Pierwsze zwycięstwo</td>
+        <td>2007 Grand Prix Kanady</td>
+    </tr>
+    <tr>
+        <td>Tytuły mistrza świata</td>
+        <td>7</td>
+    </tr>
+</table>
+<div id="carrer">Kariera</div>
+<br>
+<ul>
+    <li>Mclaren 2007-2012</li>
+    <li>Mercedes 2013-obecnie</li>
+</ul>
+<p id=informs>Lewis hamilton urodził się 7 stycznia 1985. Jest 7-krotnym mistrzem świata. Hamilton jest rekordzistą w wielu sekcjach F1 np. zwycięztw.</p>
+
+</body>
+</html>

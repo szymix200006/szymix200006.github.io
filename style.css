@@ -1,0 +1,217 @@
+body{
+    margin: 0;
+    font-family:  sans-serif;
+}
+#logo{
+    width: 100%;
+    height: 13vh;
+    background-color: #190061;
+    text-align: center;
+    color: aliceblue;
+    font-size: 5vmin;
+    text-shadow: 0 0 20px #fff, 
+                 0 0 30px #3500D3, 
+                 0 0 40px #3500D3, 
+                 0 0 50px #3500D3, 
+                 0 0 60px #3500D3, 
+                 0 0 70px #3500D3, 
+                 0 0 80px #3500D3;
+    
+}
+#menu1{
+    float: left;
+    background-color: #3500D3;
+    width: 15%;
+    height: 80vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#menu2{
+    float: right;
+    background-color: #3500D3;
+    width: 15%;
+    height: 80vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#footer{
+    width: 100%;
+    height: 7vh;
+    background-color: #240090;
+    clear: both;
+    text-align: center;
+    color:aliceblue;
+    font-size: 5vmin;
+}
+#main{
+    width: 70%;
+    height: 80vh;
+    float: left;
+}
+a{
+    text-decoration: none;
+    font-size: 2vmin;
+    color: #0C0032;
+    margin-top: 4vh;
+}
+a:hover{
+    color:white;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+span{
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+    font-size: 2vmin;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    width: 8vw;
+    margin-left: 3.5vw;
+    margin-bottom: 2vh;
+}
+@media (max-width:600px){
+    #logo{
+        width: 100%;
+        height: 6vh;
+        padding-top: 2vh;
+        background-color: #190061;
+        text-align: center;
+        color: aliceblue;
+        font-size: 5vmin;
+        text-shadow: 0 0 20px #fff, 
+                     0 0 30px #3500D3, 
+                     0 0 40px #3500D3, 
+                     0 0 50px #3500D3, 
+                     0 0 60px #3500D3, 
+                     0 0 70px #3500D3, 
+                     0 0 80px #3500D3;
+        
+    }
+    #menu1{
+        background-color: #3500D3;
+        width: 100%;
+        height: 9vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center; 
+        padding-bottom: 1vh;
+    }
+    #menu2{
+        background-color: #3500D3;
+        width: 100%;
+        height: 9vh;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        display: none;
+    }
+    #footer{
+        width: 100%;
+        height: 9vh;
+        padding-top: 2vh;
+        background-color: #240090;
+        text-align: center;
+        color:aliceblue;
+        font-size: 3vmin;
+        justify-content:center;
+        vertical-align: center;
+    }
+    #main{
+        width: 100%;
+        height: 75vh;
+        float: left;
+    }
+    a{
+        text-decoration: none;
+        font-size: 1.4vh;
+        color: #0C0032;
+        float:left;
+        margin-right: 1vh;
+    }
+    form{
+        display: none;
+    }
+    span{
+        display: none;
+    }
+    .first{
+        margin-left: 5vmin;
+    }
+}
+@media (min-width:601px) and (max-width:1200px){
+    #logo{
+        width: 100%;
+        height: 6vh;
+        padding-top: 2vh;
+        background-color: #190061;
+        text-align: center;
+        color: aliceblue;
+        font-size: 5vmin;
+        text-shadow: 0 0 20px #fff, 
+                     0 0 30px #3500D3, 
+                     0 0 40px #3500D3, 
+                     0 0 50px #3500D3, 
+                     0 0 60px #3500D3, 
+                     0 0 70px #3500D3, 
+                     0 0 80px #3500D3;
+        
+    }
+    #menu1{
+        background-color: #3500D3;
+        width: 100%;
+        height: 9vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center; 
+        padding-bottom: 3vh;
+    }
+    #menu2{
+        background-color: #3500D3;
+        width: 20%;
+        height: 80vh;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        float: right;
+    }
+    #footer{
+        width: 100%;
+        height: 4vh;
+        padding-top: 2vh;
+        background-color: #240090;
+        text-align: center;
+        color:aliceblue;
+        font-size: 3vmin;
+    }
+    #main{
+        width: 80%;
+        height: 80vh;
+        float: left;
+    }
+    a{
+        text-decoration: none;
+        font-size: 2.6vh;
+        color: #0C0032;
+        float:left;
+        margin-right: 0.9vw;
+        
+    }
+    form{
+        display: none;
+    }
+    span{
+        display: none;
+    }
+    .first{
+        margin-left: 5vmin;
+    }
+}

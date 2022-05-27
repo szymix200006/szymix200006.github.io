@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+    <h1 id="up">Alain Prost</h1>
+    <div class="topnav">
+        <a href="#gallery-container">Galeria</a>
+        <a href="#stats">Informacje</a>
+        <a href="#carrer">Kariera</a>
+        <a href="#informs">O życiu</a>
+      </div>
+        <br>
+    <div id="gallery-container">
+    <div class="row">
+        <div class="column">
+          <img src="foto/pro1.jpg" alt=obraz onclick="openModal();currentSlide(1)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="foto/pro2.jpg" alt=obraz onclick="openModal();currentSlide(2)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="foto/pro3.jpg" alt=obraz onclick="openModal();currentSlide(3)" class="hover-shadow">
+        </div>
+      </div>
+      
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+      
+          <div class="mySlides">
+            <div class="numbertext">1 / 3</div>
+            <img src="foto/pro1.jpg" style="width:100%" alt=obraz>
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">2 / 3</div>
+            <img src="foto/pro2.jpg" style="width:100%" alt=obraz>
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">3 / 3</div>
+            <img src="foto/pro3.jpg" style="width:100%" alt=obraz>
+          </div>
+    
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+      
+          <div class="column">
+            <img class="demo" src="foto/pro1.jpg" onclick="currentSlide(1)" alt="Prost w rywalizacji z Senną">
+          </div>
+      
+          <div class="column">
+            <img class="demo" src="foto/pro2.jpg" onclick="currentSlide(2)" alt="Prost w swoim Mclarenie">
+          </div>
+      
+          <div class="column">
+            <img class="demo" src="foto/pro3.jpg" onclick="currentSlide(3)" alt="Prost na podium GP Węgier 1989">
+          </div>
+        </div>
+    </div>
+</div>
+<br>
+<table>
+  <caption id="stats">Informacje</caption>
+    <tr>
+        <td>Data Urodzenia</td>
+        <td>24.02.1955</td>
+    </tr>
+    <tr>
+        <td>Narodowość</td>
+        <td>Francja</td>
+    </tr>
+    <tr>
+        <td>Lata kariery</td>
+        <td>1980-1993</td>
+    </tr>
+    <tr>
+        <td>Starty</td>
+        <td>202</td>
+    </tr>
+    <tr>
+        <td>Podia</td>
+        <td>106</td>
+    </tr>
+    <tr>
+        <td>Pole positions</td>
+        <td>33</td>
+    </tr>
+    <tr>
+        <td>Zwycięstwa</td>
+        <td>51</td>
+    </tr>
+    <tr>
+        <td>Pierwsze zwycięstwo</td>
+        <td>1981 Grand Prix Francji</td>
+    </tr>
+    <tr>
+        <td>Tytuły mistrza świata</td>
+        <td>4</td>
+    </tr>
+</table>
+<div id="carrer">Kariera</div>
+<br>
+<ul>
+    <li>Mclaren Ford 1980</li>
+    <li>Renault 1981-1983</li>
+    <li>Mclaren TAG/Honda 1984-1989</li>
+    <li>Ferrari 1990-1991</li>
+    <li>1993 Wiliams-Renault</li>
+</ul>
+<p id=informs>Alain Prost urodził się 24 lutego 1955 roku w Lorette we Francji. Przez długi czas był rekordzistą pod względem zwycięst. Jest 4-krotnym mistrzem świata F1.</p>
+
+
+</body>
+</html>

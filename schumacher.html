@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+    <h1 id="up">Michael Schumacher</h1>
+    <div class="topnav">
+        <a href="#gallery-container">Galeria</a>
+        <a href="#stats">Informacje</a>
+        <a href="#carrer">Kariera</a>
+        <a href="#informs">O życiu</a>
+      </div>
+        <br>
+    <div id="gallery-container">
+    <div class="row">
+        <div class="column">
+          <img src="foto/sch1.jpg" alt=obraz onclick="openModal();currentSlide(1)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="foto/sch2.jpg" alt=obraz onclick="openModal();currentSlide(2)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="foto/sch3.jpg" alt=obraz onclick="openModal();currentSlide(3)" class="hover-shadow">
+        </div>
+      </div>
+      
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+      
+          <div class="mySlides">
+            <div class="numbertext">1 / 3</div>
+            <img src="foto/sch1.jpg" style="width:100%" alt=obraz>
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">2 / 3</div>
+            <img src="foto/sch2.jpg" style="width:100%" alt=obraz>
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">3 / 3</div>
+            <img src="foto/sch3.jpg" style="width:100%" alt=obraz>
+          </div>
+    
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+      
+          <div class="column">
+            <img class="demo" src="foto/sch1.jpg" onclick="currentSlide(1)" alt="Schumacher po zwycięstwie w Bahrainie">
+          </div>
+      
+          <div class="column">
+            <img class="demo" src="foto/sch2.jpg" onclick="currentSlide(2)" alt="Schumacher na podium we Francji">
+          </div>
+      
+          <div class="column">
+            <img class="demo" src="foto/sch3.jpg" onclick="currentSlide(3)" alt="Schumacher na podium w Australii">
+          </div>
+        </div>
+    </div>
+</div>
+<br>
+<table >
+    <caption id="stats">Informacje</caption>
+    <tr>
+        <td>Data Urodzenia</td>
+        <td>3.01.1969</td>
+    </tr>
+    <tr>
+        <td>Narodowość</td>
+        <td>Niemcy</td>
+    </tr>
+    <tr>
+        <td>Lata kariery</td>
+        <td>1991-2006,2010-2012</td>
+    </tr>
+    <tr>
+        <td>Starty</td>
+        <td>308</td>
+    </tr>
+    <tr>
+        <td>Podia</td>
+        <td>155</td>
+    </tr>
+    <tr>
+        <td>Pole positions</td>
+        <td>68</td>
+    </tr>
+    <tr>
+        <td>Zwycięstwa</td>
+        <td>91</td>
+    </tr>
+    <tr>
+        <td>Pierwsze zwycięstwo</td>
+        <td>1992 Grand Prix Belgii</td>
+    </tr>
+    <tr>
+        <td>Tytuły mistrza świata</td>
+        <td>7</td>
+    </tr>
+</table>
+<div id="carrer">Kariera</div>
+<br>
+<ul>
+    <li>Jordan 1991-1993</li>
+    <li>Benetton 1994-1995</li>
+    <li>Ferrari 1996-2006</li>
+    <li>Mercedes 2010-2012</li>
+</ul>
+<p id=informs>Michael Schumacher urodził się 3 stycznia 1969 w Hurth. Jest 7-krotnym mistrzem świata Formuły 1. Michael jest powszechnie uważany za jednego z najlepszych kierowców wszech czasów. Michael Schumacher to jedyny kierowca w historii F1, który stanął na podium we wszystkich wyścigach sezonu.</p>
+</body>
+</html>

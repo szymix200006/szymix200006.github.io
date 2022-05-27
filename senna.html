@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="style3.css">
+</head>
+<body>
+    <h1 id="up">Ayrton Senna</h1>
+    <div class="topnav">
+        <a href="#gallery-container">Galeria</a>
+        <a href="#stats">Informacje</a>
+        <a href="#carrer">Kariera</a>
+        <a href="#informs">O życiu</a>
+      </div>
+        <br>
+    <div id="gallery-container">
+    <div class="row">
+        <div class="column">
+          <img src="foto/sen1.jpg" alt=obraz onclick="openModal();currentSlide(1)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="foto/sen2.jpg" alt=obraz onclick="openModal();currentSlide(2)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="foto/sen3.jpg" alt=obraz onclick="openModal();currentSlide(3)" class="hover-shadow">
+        </div>
+      </div>
+      
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+      
+          <div class="mySlides">
+            <div class="numbertext">1 / 3</div>
+            <img src="foto/sen1.jpg" style="width:100%" alt=obraz>
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">2 / 3</div>
+            <img src="foto/sen2.jpg" style="width:100%" alt=obraz>
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">3 / 3</div>
+            <img src="foto/sen3.jpg" style="width:100%" alt=obraz>
+          </div>
+    
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+      
+          <div class="column">
+            <img class="demo" src="foto/sen1.jpg" onclick="currentSlide(1)" alt="Senna w swoim kasku">
+          </div>
+      
+          <div class="column">
+            <img class="demo" src="foto/sen2.jpg" onclick="currentSlide(2)" alt="Senna po zwycięstwie">
+          </div>
+      
+          <div class="column">
+            <img class="demo" src="foto/sen3.jpg" onclick="currentSlide(3)" alt="Senna w swoim bolidzie">
+          </div>
+        </div>
+    </div>
+</div>
+<br>
+<table>
+  <caption id="stats">Informacje</caption>
+    <tr>
+        <td>Data Urodzenia</td>
+        <td>21.03.1960</td>
+    </tr>
+    <tr>
+        <td>Narodowość</td>
+        <td>Brazylia</td>
+    </tr>
+    <tr>
+        <td>Lata kariery</td>
+        <td>1984-1994</td>
+    </tr>
+    <tr>
+        <td>Starty</td>
+        <td>161</td>
+    </tr>
+    <tr>
+        <td>Podia</td>
+        <td>80</td>
+    </tr>
+    <tr>
+        <td>Pole positions</td>
+        <td>65</td>
+    </tr>
+    <tr>
+        <td>Zwycięstwa</td>
+        <td>41</td>
+    </tr>
+    <tr>
+        <td>Pierwsze zwycięstwo</td>
+        <td>1985 Grand Prix Portugalii</td>
+    </tr>
+    <tr>
+        <td>Tytuły mistrza świata</td>
+        <td>3</td>
+    </tr>
+</table>
+<div id="carrer">Kariera</div>
+<br>
+<ul>
+    <li>Toleman 1984</li>
+    <li>Lotus 1985-1987</li>
+    <li>Mclaren TAG/Honda 1988-1993</li>
+    <li>Williams 1994</li>
+</ul>
+<p id=informs>Ayrton Senna urodził się 21 marca 1960 w brazylijskim Sao Paulo. Przez wielu uznawany jest za najlepszego kierowce F1 wszech czasów. Zmarł tragicznie 1 maja 1994 w podczas GP San Marino na torze Imola.</p>
+
+
+</body>
+</html>
